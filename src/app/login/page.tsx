@@ -23,11 +23,24 @@ const Login = () => {
     }
 
     return (
-        <div className="h-screen flex justify-center items-center bg-gradient-to-br from-yellow-400/20 via-blue-300 to-purple-400/60">
-            <div className="w-1/2 rounded-md bg-white/30 shadow-lg flex justify-between flex-col">
-                <div className="h-28 w-full justify-center flex items-center">
-                    <span className="text-3xl text-black font-mono font-semibold bg-yellow-300 p-3 rounded-lg">Welcome To SignIn</span>
-                </div>
+        <div className=" h-screen flex justify-center items-center min-h-full flex-col  px-6 py-12 lg:px-8 flex-1 bg-blue-300">
+<div className="sm:mx-auto sm:w-full sm:max-w-sm">
+
+      <img
+        src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/election-campaign-logo-template-design-d097bf8c17d33549b3f4e7c6ed1c9de0_screen.jpg?ts=1677474006"
+        alt="Election logo"
+        className="mx-auto h-90 w-auto"
+      />
+   
+
+<h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-black underline">
+            Log in to your account
+</h2>
+<p><br></br></p>
+</div>
+        
+            <div className="w-1/2 rounded-md bg-white/30 shadow-lg flex justify-between flex-col text-center">
+               
                 <form onSubmit={handleSubmit(submitForm)} className="h-full w-1/2 mx-auto ">
                     <InputField
                         register={register}
@@ -54,6 +67,7 @@ const Login = () => {
                 </div>
             </div>
         </div>
+      
     )
 }
 
