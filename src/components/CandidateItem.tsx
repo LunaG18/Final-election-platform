@@ -41,7 +41,7 @@ const Candidate = ({ id, label, checked, onChange, candidate }: CandidateProps) 
                         <AvatarImage src={candidate.partyLogo} alt="party logo" />
                         <AvatarFallback>CN</AvatarFallback>
                     </Avatar>
-                    <span className="text-sm font-semibold text-center">{candidate.party}</span>
+                    <span className="text-sm font-bold text-center">{candidate.party}</span>
                 </section>
                 <ManifestoModel
                     candidate={candidate}
@@ -50,7 +50,7 @@ const Candidate = ({ id, label, checked, onChange, candidate }: CandidateProps) 
                 <section
                 className='flex flex-row gap-2'
                 >
-                    <p className='font-semibold'>Vote:</p>
+                    <p className='font-semibold text-[1rem]'>Vote:</p>
                     <div className="">
                         <input
                             type="checkbox"

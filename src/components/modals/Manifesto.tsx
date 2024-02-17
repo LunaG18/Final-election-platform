@@ -37,7 +37,7 @@ const ManifestoModel: React.FC<ModalProps> = ({ candidate }) => {
         <DialogFooter>
           <DialogDescription>
 
-          Information verified by the Electoral Commission of South Africa
+          Parties full manifesto can be found on their respective website
           </DialogDescription>
 
         </DialogFooter>
