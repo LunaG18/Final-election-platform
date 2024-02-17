@@ -22,7 +22,7 @@ const ManifestoModel: React.FC<ModalProps> = ({ candidate }) => {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button variant="outline">View Manifesto</Button>
+        <Button variant="outline" className='bg-gray-200'>View Manifesto</Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
