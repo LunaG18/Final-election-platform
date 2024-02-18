@@ -1,7 +1,8 @@
 "use client";
-import { HOME_ROUTE, LOGIN_ROUTE, BALLOT_ROUTE, REGISTER_ROUTE } from "@/constants/routes";
+import { HOME_ROUTE, LOGIN_ROUTE, BALLOT_ROUTE, REGISTER_ROUTE, RESULTS_ROUTE } from "@/constants/routes";
 import { AuthContext } from "@/provider/AuthProvider";
 import { auth } from "@/util/firebase";
+import { resolveObjectURL } from "buffer";
 import { signOut } from "firebase/auth";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -36,7 +37,7 @@ const Header = () => {
                     }
                     {user?.isLogin &&
                         <>
-                           
+                           <Link href={RESULTS_ROUTE} className="text-[1rem]"><li>Results</li></Link>
                             <li className=" cursor-pointer text-[1rem]" onClick={logOut}>Logout</li>
                         </>
                     }

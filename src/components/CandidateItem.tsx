@@ -43,6 +43,7 @@ const Candidate = ({ id, label, checked, onChange, candidate }: CandidateProps) 
                     </Avatar>
                     <span className="text-sm font-bold text-center">{candidate.party}</span>
                 </section>
+                <section className='flex flex-row gap-2'><p className='font-semibold text-[1rem]'>Party ID:</p><span className="font-bold text-center underline">{candidate.id}</span></section>
                 <ManifestoModel
                     candidate={candidate}
                 />
