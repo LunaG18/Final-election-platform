@@ -270,9 +270,9 @@ const Graphs = () => {
      </section>
       </div>
       <div className="w-1/2">
+        <h2 className='text-center text-[2rem] font-semibold text-white'>Votes by Party</h2>
         <Bar data={getBarChartDataAndOptions().data} options={getBarChartDataAndOptions().options} />
-        <p><br></br></p>
-        <Bar data={getBarChartDataAndOptionsForStacked().data} options={getBarChartDataAndOptionsForStacked().options} />
+        
         <section className='flex flex-row'> 
             <img
         src="https://upload.wikimedia.org/wikipedia/en/0/0d/African_National_Congress_logo.svg"
