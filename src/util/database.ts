@@ -21,7 +21,7 @@ class Database {
 
     async addVoter(voter: Voter): Promise<void> {
         // Create a reference to a new document with the specified ID
-        const voterRef = doc(collection(db, 'voters'), voter.id);
+        const voterRef = doc(collection(db, 'voters'), voter.user_id);
 
         try {
             // Set the data of the document

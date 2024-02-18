@@ -36,7 +36,7 @@ const Header = () => {
                     }
                     {user?.isLogin &&
                         <>
-                            <Link href={BALLOT_ROUTE} className="text-[1rem]"><li>Profile</li></Link>
+                           
                             <li className=" cursor-pointer text-[1rem]" onClick={logOut}>Logout</li>
                         </>
                     }
