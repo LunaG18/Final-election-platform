@@ -37,7 +37,7 @@ const Header = () => {
                     }
                     {user?.isLogin &&
                         <>
-                           <Link href={RESULTS_ROUTE} className="text-[1rem]"><li>Results</li></Link>
+                           <Link href={BALLOT_ROUTE} className="text-[1rem]"><li>Vote</li></Link>
                             <li className=" cursor-pointer text-[1rem]" onClick={logOut}>Logout</li>
                         </>
                     }
