@@ -1,8 +1,8 @@
-import { HOME_ROUTE, LOGIN_ROUTE, PROFILE_ROUTE, REGISTER_ROUTE } from "@/constants/routes";
+import { LOGIN_ROUTE, HOME_ROUTE, REGISTER_ROUTE } from "@/constants/routes";
 import { AuthContext } from "@/provider/AuthProvider";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
-const GUEST_ROUTES = [LOGIN_ROUTE,REGISTER_ROUTE, HOME_ROUTE];
+const GUEST_ROUTES = [LOGIN_ROUTE,REGISTER_ROUTE];
 
 const useAuthentication = () => {
     const {user}:any = AuthContext();
@@ -16,7 +16,7 @@ const useAuthentication = () => {
         }
 
         if(userInfo && GUEST_ROUTES.includes(currentRoute)){
-            router.push(PROFILE_ROUTE);
+            router.push(HOME_ROUTE);
         }
     },[]);
 

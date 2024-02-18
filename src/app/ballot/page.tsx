@@ -156,7 +156,7 @@ export default function Home() {
     <div className="flex flex-col items-center gap-4 bg-blue-300">
       <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Voting Page</h1>
       <p className="mx-auto max-w-[600px] text-gray-500 text-center md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-          Vote for your favourite candidate by selecting the check box and pressing vote now.
+          Vote for your favourite candidate by selecting their respective check box and pressing vote now.
         </p>
         {selectedCandidate && (
         <Confirmation candidate={selectedCandidate} onSubmit={handleSubmit} />
