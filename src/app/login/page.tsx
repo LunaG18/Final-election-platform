@@ -18,7 +18,7 @@ const Login = () => {
             router.push(HOME_ROUTE);
         }).catch((e)=>{
             console.log("Login Error ", e.message);
-            alert("Please try Again");
+            alert("User not found");
         });
     }
 

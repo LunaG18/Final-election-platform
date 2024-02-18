@@ -1,8 +1,8 @@
-import { LOGIN_ROUTE, PROFILE_ROUTE, REGISTER_ROUTE } from "@/constants/routes";
+import { HOME_ROUTE, LOGIN_ROUTE, PROFILE_ROUTE, REGISTER_ROUTE } from "@/constants/routes";
 import { AuthContext } from "@/provider/AuthProvider";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
-const GUEST_ROUTES = [LOGIN_ROUTE,REGISTER_ROUTE];
+const GUEST_ROUTES = [LOGIN_ROUTE,REGISTER_ROUTE, HOME_ROUTE];
 
 const useAuthentication = () => {
     const {user}:any = AuthContext();
