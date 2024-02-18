@@ -64,6 +64,17 @@ const provinces = [
     },
 ];
  
+const validateDisposableEmail = async (email: string): Promise<boolean> => {
+    try {
+        const response = await fetch(`https://disposable.debounce.io/?email=${email}`);
+        const data = await response.json();
+        return data.disposable === "true";
+    } catch (error) {
+        console.error("Error validating disposable email:", error);
+        return false;
+    }
+};
+
 const formSchema = z
     .object({
         firstName: z.string().min(2, "First name is too short"),
@@ -79,6 +90,12 @@ const formSchema = z
     }, {
         message: "Passwords do not match",
         path: ["passwordConfirm"],
+    }).refine(async (data) => {
+        const isDisposable = await validateDisposableEmail(data.emailAddress);
+        return !isDisposable;
+    }, {
+        message: "Disposable emails are not allowed",
+        path: ["emailAddress"],
     });
  
 export default function Home() {
@@ -93,7 +110,7 @@ export default function Home() {
             firstName: "",
             lastName: "",
             nationalId: "",
-            province: "", // Set a default province if desired
+            province: "", 
             emailAddress: "",
             password: "",
             passwordConfirm: "",
