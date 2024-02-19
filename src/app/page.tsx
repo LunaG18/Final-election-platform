@@ -273,11 +273,13 @@ const Graphs = () => {
         <h2 className='text-center text-[2rem] font-semibold text-white'>Votes by Party</h2>
         <Bar data={getBarChartDataAndOptions().data} options={getBarChartDataAndOptions().options} />
         
-        <section className='flex flex-row'> 
+        <section className='flex flex-row gap-8'> 
+        <p className='font-semibold text-sm'>Party</p>
             <img
         src="https://upload.wikimedia.org/wikipedia/en/0/0d/African_National_Congress_logo.svg"
         alt="ANC"
         className="rounded-full w-20 h-20"/>
+        
         <img
         src="https://liberal-international.org/wp-content/uploads/2017/05/DA-240x240.jpg"
         alt="DA"
