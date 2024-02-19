@@ -1,0 +1,21 @@
+[debug] [2024-02-19T00:03:18.970Z] ----------------------------------------------------------------------
+[debug] [2024-02-19T00:03:18.981Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\lunag\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-02-19T00:03:18.981Z] CLI Version:   13.3.0
+[debug] [2024-02-19T00:03:18.982Z] Platform:      win32
+[debug] [2024-02-19T00:03:18.982Z] Node Version:  v21.6.1
+[debug] [2024-02-19T00:03:18.982Z] Time:          Mon Feb 19 2024 02:03:18 GMT+0200 (South Africa Standard Time)
+[debug] [2024-02-19T00:03:18.983Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-02-19T00:03:18.989Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-02-19T00:03:18.990Z] > authorizing via signed-in user (lunagwayi@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\lunag\Downloads\ThickElephant-main\ThickElephant-main\votar
+

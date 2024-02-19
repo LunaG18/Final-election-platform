@@ -21,7 +21,7 @@ const Header = () => {
     return (
         <header className="h-20  flex px-10 drop-shadow-[0px_2px_10px_rgba(2,0,0) text-black">
             <nav className="w-full mx-auto flex justify-between items-center px-2 text-black text-xl">
-            <Link href={HOME_ROUTE} className="text-blue-500 font-bold text-[2rem] flex items-center gap-3">
+            <Link href={HOME_ROUTE} className="text-blue-500 font-bold text-[3rem] flex items-center gap-3">
         <img
         src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/election-campaign-logo-template-design-d097bf8c17d33549b3f4e7c6ed1c9de0_screen.jpg?ts=1677474006"
         alt="Election logo"

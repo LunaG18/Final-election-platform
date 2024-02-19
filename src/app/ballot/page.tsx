@@ -47,6 +47,38 @@ export default function Home() {
     auth.onAuthStateChanged((user) => {
       if (user) {
         setUser(user);
+       
+        const userID = user.uid;
+``
+        const promisedVoter: Promise<Voter | undefined> = database.getVoter(userID);
+ 
+        const allVotes = database.getVotes();
+ 
+        allVotes.then((votes) => {
+          votes.forEach((vote) => {
+            if (vote.voter.user_id === userID) {             
+              alert("You've already voted!")
+              router.push("/");
+            }            
+          });
+        }); 
+ 
+        promisedVoter.then((voter) => {
+          if (voter) {
+            setVoter(voter);
+          }
+        });
+ 
+       
+      }
+    });
+  }
+  , []);
+
+  /*useEffect(() => {
+    auth.onAuthStateChanged((user) => {
+      if (user) {
+        setUser(user);
         
         const userID = user.uid;
 ``
@@ -63,7 +95,7 @@ export default function Home() {
     });
   }
   , []);
-
+*/
 
   // Function to handle checkbox change
   const handleChange = (id: string) => {
